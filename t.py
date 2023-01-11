@@ -17,3 +17,8 @@ print(ae[5])
 print(ae[5][:1])
 del(ae[1])
 print(ae)
+dic = {"lev":45}
+print(dic['lev'])
+l = [1,2,3,4,5]
+z = tuple(l)
+print(z[:])
