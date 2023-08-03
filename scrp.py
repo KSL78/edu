@@ -13,5 +13,21 @@ if resp.status_code !=200:
 else:
     #print(resp)
     soup = BeautifulSoup(resp.text,"html.parser")
-    print(soup.find_all('div',class_="mw-parser-output"))
-    #print(soup)
+    dv1 = (soup.find_all('table',class_="infobox"))
+    dv2 = (soup.find_all('th',class_="infobox-label"))
+    dv3 = (soup.find_all('td',class_="infobox-data"))
+    # #print(soup)
+    print(len(dv1))
+    print(len(dv2))
+    print(len(dv3))
+    #print(dv2)
+    for dv1f in dv1:
+        dv1e = dv1f.find_all('th',class_="infobox-label")
+        dv1a = dv1f.find_all('td',class_="infobox-data")
+        for dv1r in dv1e:
+            print(dv1r)
+            
+        for dv1t in dv1a:
+            print(dv1t)
+            print("/////////////////////////////")
+    
