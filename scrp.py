@@ -14,20 +14,36 @@ else:
     #print(resp)
     soup = BeautifulSoup(resp.text,"html.parser")
     dv1 = (soup.find_all('table',class_="infobox"))
-    dv2 = (soup.find_all('th',class_="infobox-label"))
-    dv3 = (soup.find_all('td',class_="infobox-data"))
+    # dv2 = (soup.find_all('th',class_="infobox-label"))
+    # dv3 = (soup.find_all('td',class_="infobox-data"))
     # #print(soup)
-    print(len(dv1))
-    print(len(dv2))
-    print(len(dv3))
+    # print(len(dv1))
+    # print(len(dv2))
+    # print(len(dv3))
     #print(dv2)
-    for dv1f in dv1:
-        dv1e = dv1f.find_all('th',class_="infobox-label")
-        dv1a = dv1f.find_all('td',class_="infobox-data")
-        for dv1r in dv1e:
-            print(dv1r)
+    dv2c = []
+    dv3c = []
+    dvm = 0
+    for dv1a in dv1:
+        
+        dv2a = dv1a.find_all('th',class_="infobox-label")
+        dv3a = dv1a.find_all('td',class_="infobox-data")
+        # print(len(dv2a))
+        # print(len(dv3a))
+        dv1n = len(dv2a)
+
+        for dv2b in dv2a:
+            dv2c.append(dv2b.string)
+        for dv3b in dv3a:
+            dv3c.append(dv3b.string)
+    while dv1n>dvm:
+        print(str(dv2c[dvm])+":"+str(dv3c[dvm]))
+        print("/////////////")
+        dvm+=1
+    print(dv1n)
+    print(dvm)
+
+        
             
-        for dv1t in dv1a:
-            print(dv1t)
-            print("/////////////////////////////")
+        
     
