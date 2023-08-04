@@ -5,7 +5,7 @@ search_tx = ""#사이트에서 검색 할 내용 입력'''
 #위키 피디아 최적화
 from bs4 import BeautifulSoup
 
-burl = "https://ko.wikipedia.org/wiki/T-64"
+burl = "https://ko.wikipedia.org/wiki/T-55"
 #resp = get(f"{base_url}{search_tx}")
 resp = get(f"{burl}")
 if resp.status_code !=200:
@@ -35,7 +35,13 @@ else:
         for dv2b in dv2a:
             dv2c.append(dv2b.string)
         for dv3b in dv3a:
-            dv3c.append(dv3b.string)
+            if len(dv3b)!=1:
+                #print(dv3b)
+                dv3sp = dv3b.find_all('a')
+                #print(dv3sp[-1].string)
+                dv3c.append(dv3sp[-1].string)
+            else :
+                dv3c.append(dv3b.string)
     while dv1n>dvm:
         print(str(dv2c[dvm])+":"+str(dv3c[dvm]))
         print("/////////////")
