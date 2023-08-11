@@ -1,10 +1,10 @@
 import os
 import shutil
-file_path = 'C:/Users/lks/Desktop/A'
+file_path = '.././trans'
 
 file_names = os.listdir(file_path)
 i = 1
-shutil.copytree(file_path,'C:/Users/lks/Desktop/co')
+shutil.copytree(file_path,'.././trans/co')
 for name in file_names:
     src = os.path.join(file_path, name)
     dst = str(i) + '.jpg'
