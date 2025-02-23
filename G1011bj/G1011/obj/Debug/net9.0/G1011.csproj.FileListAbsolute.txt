@@ -1,0 +1,15 @@
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.GeneratedMSBuildEditorConfig.editorconfig
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.AssemblyInfoInputs.cache
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.AssemblyInfo.cs
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.csproj.CoreCompileInputs.cache
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.sourcelink.json
+d:\git\G1011bj\G1011\bin\Debug\net9.0\G1011.exe
+d:\git\G1011bj\G1011\bin\Debug\net9.0\G1011.deps.json
+d:\git\G1011bj\G1011\bin\Debug\net9.0\G1011.runtimeconfig.json
+d:\git\G1011bj\G1011\bin\Debug\net9.0\G1011.dll
+d:\git\G1011bj\G1011\bin\Debug\net9.0\G1011.pdb
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.dll
+d:\git\G1011bj\G1011\obj\Debug\net9.0\refint\G1011.dll
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.pdb
+d:\git\G1011bj\G1011\obj\Debug\net9.0\G1011.genruntimeconfig.cache
+d:\git\G1011bj\G1011\obj\Debug\net9.0\ref\G1011.dll
